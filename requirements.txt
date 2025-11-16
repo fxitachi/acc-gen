@@ -1,0 +1,11 @@
+Flask==2.3.3
+requests==2.31.0
+pycryptodome==3.19.0
+protobuf==4.25.1
+protobuf-decoder==0.2.0
+colorama==0.4.6
+urllib3==1.26.16
+concurrent-log-handler==0.9.20
+google-auth==2.22.0
+google-auth-oauthlib==1.0.0
+thread6==0.2.0
