@@ -8,5 +8,5 @@ urllib3==1.26.16
 concurrent-log-handler==0.9.20
 google-auth==2.22.0
 google-auth-oauthlib==1.0.0
-thread6==0.2.0
-guncorn
+gunicorn
+
