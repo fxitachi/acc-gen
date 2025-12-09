@@ -462,7 +462,7 @@ def atualizar_tokens(arch_file, token_file, tipo, local=False):
         usuarios = carregar_usuarios_local(arch_file)
     else:
         try:
-            url = f"https://raw.githubusercontent.com/minimalsend/likesc/refs/heads/main/{arch_file}"
+            url = f"https://scvirtual.alphi.media/botsistem/sendlike/{arch_file}"
             usuarios = requests.get(url, timeout=5).json()
         except Exception as e:
             print(f"❌ Erro ao carregar {arch_file}: {e}")
@@ -620,4 +620,5 @@ if __name__ == "__main__":
     updater_thread.start()
     
     # Inicia o servidor Flask
+
     app.run(host='0.0.0.0', port=5000, debug=False)
