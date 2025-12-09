@@ -311,7 +311,6 @@ def autenticar(usuario):
         # --- Parse da resposta MajorLogin ---
         login_res = MajorLoginRes_pb2.MajorLoginRes()
         login_res.ParseFromString(response.content)
-        print(login_res)
         # --- Segundo request: GetLoginData ---
         login_req = login_pb2.LoginReq()
         login_req.account_id = login_res.account_id
@@ -622,3 +621,4 @@ if __name__ == "__main__":
     # Inicia o servidor Flask
 
     app.run(host='0.0.0.0', port=5000, debug=False)
+
